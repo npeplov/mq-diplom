@@ -1,0 +1,184 @@
+* { padding: 0; margin: 0 }
+@font-face {
+  font-family: "opensans_bold";
+  src: url('../fonts/OpenSans-Bold.ttf') format("opentype");
+       url('../fonts/OpenSans-Bold.woff') format("worff"),
+       url('../fonts/OpenSans-Bold.woff2') format("woff2");
+}
+@font-face {
+  font-family: "opensans";
+  src: url('../fonts/OpenSans-Regular.ttf') format("truetype"),
+       url('../fonts/OpenSans-Regular.woff') format("woff"),
+       url('../fonts/OpenSans-Regular.woff2') format("woff2");
+}
+@font-face {
+  font-family: "opensans_bold";
+  src: url('https://betl.ru/test/fonts/OpenSans-Bold.ttf') format("opentype");
+}
+@font-face {
+  font-family: "opensans";
+  src: url('https://betl.ru/test/fonts/OpenSans-Regular.ttf') format("truetype");
+}
+
+/* Mobile first */
+header {
+  height: 100vh;
+}
+section {
+  min-height: 100vh;
+}
+.top {
+  background: url('../img/football_767.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.top::before {
+  content: "";
+  background: #0a0e34;
+  top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
+  opacity: 0.9;
+}
+.top * {
+  position: relative;
+  color: #ffffff;
+}
+.top_logo {
+  margin: calc(33 / 568 * 100vh) auto 0; /* 568px = 100%, 33px = */
+  width: 133px;
+  height: 36px;
+  fill: #ffffff;
+}
+.top h2 {
+  text-transform: uppercase;
+  font-size: calc(28 / 568 * 100vh);
+  font-family: opensans_bold;
+}
+.top_title:nth-child(2) {
+  margin-top: calc(136 / 568 * 100vh);
+  margin-left: calc(20 / 320 * 100vw);
+}
+.top_title:nth-child(3) {
+  margin-top: calc(30 / 568 * 100vh);
+  margin-left: calc(64 / 320 * 100vw);
+}
+.top_button {
+  margin: 0 auto calc(14 / 568 * 100vh);
+  padding-left: calc(92 / 320 * 100vw);
+  text-align: left;
+  width: calc(280 / 320 * 100vw);
+  height: calc(35 / 568 * 100vh);
+  border: 0;
+  border-radius: 17px;
+  background-color: #5d41b0;
+
+  font-size: calc(8 / 568 * 100vh);
+  line-height: calc(7 / 568 * 100vh);
+
+  font-family: opensans_bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+}
+.top_button:nth-child(4) {
+  margin-top: calc(90 / 568 * 100vh);
+  padding-bottom: calc(8 / 568 * 100vh);
+}
+.top_button:nth-child(5) {
+  align-items: center;
+  line-height: calc(13 / 568 * 100vh);
+}
+.top_button svg {
+  fill: #ffffff;
+  width: calc(24 / 568 * 100vh);
+}
+.top_button span {
+  font-family: opensans;
+  line-height: calc(13 / 568 * 100vh);
+}
+.app {
+  padding-left: 8px;
+}
+
+/* ATHLETS */
+
+h2 {
+  font-size: 50px;
+  font-family: opensans_bold;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+img {
+  margin: 19px auto 0;
+  display: block;
+}
+.athlets img {
+  width: 192px;
+  height: 281px;
+}
+
+article {
+  padding: 60px 20px 50px;
+}
+.first {
+  padding-top: 80px;
+  background: #f9f9f9;
+  margin-top: -55px;
+}
+.second {
+  background: #f5f3f9;
+}
+.third {
+  background: #5d41b0;
+  color: #ffffff;
+}
+h3 {
+  font-size: 23px;
+  font-family: opensans_bold;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  letter-spacing: 3px;
+}
+p {
+  font-family: opensans;
+  font-weight: 400;
+}
+.first p,
+.second p,
+.third p {
+  font-size: 15px;
+  margin-top: 25px;
+}
+.players img {
+  width: 302px;
+  height: 248px;
+}
+.be_active img,
+.find_contact img,
+.work_it img {
+  margin: 0 auto;
+  width: 320px;
+  height: 351px;
+}
+.be_active h2,
+.find_contact h2,
+.work_it h2 {
+  font-size: 28px;
+  margin: 0;
+}
+.be_active article,
+.find_contact article,
+.work_it article {
+  padding: 34px 20px 78px;
+}
+.be_active p,
+.find_contact p,
+.work_it p {
+  font-size: 16px;
+  margin-top: 20px;
+}
