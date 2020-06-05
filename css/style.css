@@ -11,14 +11,6 @@
        url('../fonts/OpenSans-Regular.woff') format("woff"),
        url('../fonts/OpenSans-Regular.woff2') format("woff2");
 }
-@font-face {
-  font-family: "opensans_bold";
-  src: url('https://betl.ru/test/fonts/OpenSans-Bold.ttf') format("opentype");
-}
-@font-face {
-  font-family: "opensans";
-  src: url('https://betl.ru/test/fonts/OpenSans-Regular.ttf') format("truetype");
-}
 
 /* Mobile first */
 header {
@@ -65,7 +57,8 @@ section {
   margin-top: calc(30 / 568 * 100vh);
   margin-left: calc(64 / 320 * 100vw);
 }
-.top_button {
+.top_button,
+.footer_app_button {
   margin: 0 auto calc(14 / 568 * 100vh);
   padding-left: calc(92 / 320 * 100vw);
   text-align: left;
@@ -181,4 +174,92 @@ p {
 .work_it p {
   font-size: 16px;
   margin-top: 20px;
+}
+footer {
+  background: url('../img/game_767.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+footer::before {
+  content: "";
+  background: #0a0e34;
+  top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
+  opacity: 0.9;
+}
+footer * {
+  position: relative;
+}
+.footer_logo_button {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #543aa0;
+  background-position: center;
+  border: 0;
+  border-radius: 13px;
+}
+.footer_logo_button svg {
+  height: 50px;
+  fill: #ffffff;
+}
+.footer_content {
+  padding: 100px 20px 0;
+  color: #ffffff;
+}
+.footer_title {
+  font-family: opensans_bold;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 58px;
+  color: #ffffff;
+}
+.footer_content p {
+  font-family: opensans;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #9b8ec1;
+  margin-top: 5px;
+}
+.footer_app_button {
+  color: #ffffff;
+}
+.footer_app_button svg {
+  fill: #ffffff;
+  width: calc(24 / 568 * 100vh);
+}
+.footer_app_button:nth-child(4) {
+  margin-top: calc(75 / 568 * 100vh);
+  padding-bottom: calc(8 / 568 * 100vh);
+}
+.footer_app_button:nth-child(5) {
+  align-items: center;
+  line-height: calc(13 / 568 * 100vh);
+}
+.footer_app_button span {
+  font-family: opensans;
+  line-height: calc(13 / 568 * 100vh);
+}
+.footer_logo_text {
+  padding-bottom: 10px;
+  flex-grow: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.footer_logo_text svg {
+  height: 36px;
+  fill: #ffffff;
 }
