@@ -16,9 +16,6 @@
 header {
   height: 100vh;
 }
-section {
-  min-height: 100vh;
-}
 .top {
   background: url('../img/football_767.jpg');
   background-repeat: no-repeat;
@@ -46,7 +43,7 @@ section {
 }
 .top h2 {
   text-transform: uppercase;
-  font-size: calc(28 / 568 * 100vh);
+  font-size: calc(28 / 320 * 100vw);
   font-family: opensans_bold;
 }
 .top_title:nth-child(2) {
@@ -105,6 +102,7 @@ h2 {
   color: #e7e7e7;
   margin-top: 25px;
   margin-left: 20px;
+  padding-left: 20px;
 }
 img {
   margin: 19px auto 0;
@@ -132,10 +130,35 @@ article {
 }
 h3 {
   font-size: 23px;
+  line-height: 1;
   font-family: opensans_bold;
   text-transform: uppercase;
   color: #c1c1c1;
   letter-spacing: 3px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.athlets h3::before,
+.players h3::before {
+  color: #000000;
+  font-size: 14px;
+  font-family: opensans_bold;
+  border-bottom: 4px #5d41b0 solid;
+  height: 15px;
+  width: 18px;
+  display: block;
+  padding-top: 2px;
+  margin-right: 10px;
+}
+article.first h3::before {
+  content: "01";
+}
+article.second h3::before {
+  content: "02";
+}
+article.third h3::before {
+  content: "03";
+  border-bottom: 4px #ffffff solid;
 }
 p {
   font-family: opensans;
@@ -155,8 +178,7 @@ p {
 .find_contact img,
 .work_it img {
   margin: 0 auto;
-  width: 320px;
-  height: 351px;
+  width: 100%;
 }
 .be_active h2,
 .find_contact h2,
@@ -175,6 +197,9 @@ p {
   font-size: 16px;
   margin-top: 20px;
 }
+
+/* FOOTER */
+
 footer {
   background: url('../img/game_767.jpg');
   background-repeat: no-repeat;
@@ -217,7 +242,7 @@ footer * {
 }
 .footer_title {
   font-family: opensans_bold;
-  font-size: 32px;
+  font-size: calc(32 / 568 * 100vh);
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -226,7 +251,7 @@ footer * {
 }
 .footer_content p {
   font-family: opensans;
-  font-size: 14px;
+  font-size: calc(14 / 568 * 100vh);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
