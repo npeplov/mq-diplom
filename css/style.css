@@ -14,7 +14,7 @@
 
 /* Mobile first */
 header {
-  height: 100vh;
+  min-height: 100vh;
 }
 .top {
   background: url('../img/football_767.jpg');
@@ -100,9 +100,8 @@ h2 {
   font-family: opensans_bold;
   text-transform: uppercase;
   color: #e7e7e7;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: 20px;
-  padding-left: 20px;
 }
 img {
   margin: 19px auto 0;
@@ -174,28 +173,56 @@ p {
   width: 302px;
   height: 248px;
 }
-.be_active img,
-.find_contact img,
-.work_it img {
+
+/* BE ACTIVE */
+.img_and_square {
+  position: relative;
+}
+.img_and_square::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  left: 20px;
+  bottom: -12px;
+  background: #5e42b0;
+  position: absolute;
+  display: block;
+}
+.features img {
   margin: 0 auto;
   width: 100%;
 }
-.be_active h2,
-.find_contact h2,
-.work_it h2 {
+.features h2 {
   font-size: 28px;
-  margin: 0;
+  margin: 34px 0 0;
+  padding: 0 20px;
 }
-.be_active article,
-.find_contact article,
-.work_it article {
-  padding: 34px 20px 78px;
+.features h2::before {
+  font-family: opensans_bold;
+  font-size: 14px;
+  color: #ffffff;
+  border-bottom: 4px #8f7bc8 solid;
+  position: absolute;
+  /*                верх    1/2 кв  s1/2 номера  border */
+  margin-top: calc(-92px + 70px / 2 - 19px / 2 - 4px);
+  margin-left: calc(35px - 15px / 2);
 }
-.be_active p,
-.find_contact p,
-.work_it p {
+.features:nth-child(3) h2::before {
+  content: "01";
+}
+.features:nth-child(4) h2::before {
+  content: "02";
+}
+.features:nth-child(5) h2::before {
+  content: "03";
+}
+.features article {
+  padding: 0;
+}
+.features p {
   font-size: 16px;
   margin-top: 20px;
+  padding: 0 20px 78px;
 }
 
 /* FOOTER */
@@ -237,12 +264,12 @@ footer * {
   fill: #ffffff;
 }
 .footer_content {
-  padding: 100px 20px 0;
+  padding: 100px 6.25vw 0;
   color: #ffffff;
 }
 .footer_title {
   font-family: opensans_bold;
-  font-size: calc(32 / 568 * 100vh);
+  font-size: 10.076vw;
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -251,7 +278,7 @@ footer * {
 }
 .footer_content p {
   font-family: opensans;
-  font-size: calc(14 / 568 * 100vh);
+  font-size: 4.375vw;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
