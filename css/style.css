@@ -13,6 +13,7 @@
 }
 
 /* Mobile first */
+
 header {
   min-height: 100vh;
 }
@@ -36,7 +37,7 @@ header {
   color: #ffffff;
 }
 .top_logo {
-  margin: calc(33 / 568 * 100vh) auto 0; /* 568px = 100%, 33px = */
+  margin: calc(33 / 568 * 100vh) auto 0; /* 568px = 100%, 33px = x*/
   width: 133px;
   height: 36px;
   fill: #ffffff;
@@ -56,10 +57,12 @@ header {
 }
 .top_button,
 .footer_app_button {
+  text-decoration: none;
   margin: 0 auto calc(14 / 568 * 100vh);
   padding-left: calc(92 / 320 * 100vw);
   text-align: left;
   width: calc(280 / 320 * 100vw);
+  box-sizing: border-box;
   height: calc(35 / 568 * 100vh);
   border: 0;
   border-radius: 17px;
@@ -93,7 +96,7 @@ header {
   padding-left: 8px;
 }
 
-/* ATHLETS */
+/* USERS*/
 
 h2 {
   font-size: 50px;
@@ -107,7 +110,7 @@ img {
   margin: 19px auto 0;
   display: block;
 }
-.athlets img {
+.users:nth-child(1) img {
   width: 192px;
   height: 281px;
 }
@@ -115,15 +118,15 @@ img {
 article {
   padding: 60px 20px 50px;
 }
-.first {
+.users_pain:nth-child(3) {
   padding-top: 80px;
   background: #f9f9f9;
   margin-top: -55px;
 }
-.second {
+.users_pain:nth-child(4) {
   background: #f5f3f9;
 }
-.third {
+.users_pain:nth-child(5) {
   background: #5d41b0;
   color: #ffffff;
 }
@@ -137,8 +140,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
 }
-.athlets h3::before,
-.players h3::before {
+.users h3::before {
   color: #000000;
   font-size: 14px;
   font-family: opensans_bold;
@@ -163,18 +165,17 @@ p {
   font-family: opensans;
   font-weight: 400;
 }
-.first p,
-.second p,
-.third p {
+.users_pain p {
   font-size: 15px;
   margin-top: 25px;
 }
-.players img {
+.users:nth-child(2) img {
   width: 302px;
   height: 248px;
 }
 
-/* BE ACTIVE */
+/* FEAUTURES */
+
 .img_and_square {
   position: relative;
 }
