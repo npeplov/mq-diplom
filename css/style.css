@@ -1,7 +1,7 @@
 * { padding: 0; margin: 0 }
 @font-face {
   font-family: "opensans_bold";
-  src: url('../fonts/OpenSans-Bold.ttf') format("opentype");
+  src: url('../fonts/OpenSans-Bold.ttf') format("truetype"),
        url('../fonts/OpenSans-Bold.woff') format("worff"),
        url('../fonts/OpenSans-Bold.woff2') format("woff2");
 }
@@ -41,30 +41,41 @@ header {
   width: 133px;
   height: 36px;
   fill: #ffffff;
+  flex-grow: 2;
 }
-.top h2 {
-  text-transform: uppercase;
-  font-size: calc(28 / 320 * 100vw);
+h1 {
+  padding: 0 calc(20 / 320 * 100vw);
   font-family: opensans_bold;
+  font-size: calc(28 / 320 * 100vw);
+  text-transform: uppercase;
 }
-.top_title:nth-child(2) {
-  margin-top: calc(136 / 568 * 100vh);
-  margin-left: calc(20 / 320 * 100vw);
+h1 span {
+  display: block;
+  padding-left: calc(44 / 320 * 100vw);
+  padding-top: 30px;
 }
-.top_title:nth-child(3) {
-  margin-top: calc(30 / 568 * 100vh);
-  margin-left: calc(64 / 320 * 100vw);
+
+.top_buttons {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.icon_and_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .top_button,
 .footer_app_button {
   text-decoration: none;
-  margin: 0 auto calc(14 / 568 * 100vh);
+  /* margin: 0 auto calc(14 / 568 * 100vh); */
   padding-left: calc(92 / 320 * 100vw);
-  text-align: left;
   width: calc(280 / 320 * 100vw);
   box-sizing: border-box;
-  height: calc(35 / 568 * 100vh);
-  border: 0;
   border-radius: 17px;
   background-color: #5d41b0;
 
@@ -76,13 +87,15 @@ header {
   display: flex;
   align-items: flex-end;
 }
-.top_button:nth-child(4) {
-  margin-top: calc(90 / 568 * 100vh);
+.top_button:nth-child(1) {
   padding-bottom: calc(8 / 568 * 100vh);
+  padding-top: 3px;
 }
-.top_button:nth-child(5) {
+.top_button:nth-child(2) {
   align-items: center;
   line-height: calc(13 / 568 * 100vh);
+  padding-bottom: 5px;
+  padding-top: 6px;
 }
 .top_button svg {
   fill: #ffffff;
@@ -156,7 +169,6 @@ h2 {
   color: #c1c1c1;
   letter-spacing: 3px;
   display: flex;
-  flex-wrap: wrap;
 }
 .users_pain h3::before {
   color: #000000;
