@@ -60,6 +60,7 @@ h1 span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .icon_and_link {
@@ -69,13 +70,17 @@ h1 span {
   width: 100%;
 }
 
+/* margin: 0 auto calc(14 / 568 * 100vh); */
+/* padding-left: calc(92 / 320 * 100vw); */
+/* box-sizing: border-box; */
+/* display: flex;
+align-items: flex-end; */
+
 .top_button,
 .footer_app_button {
   text-decoration: none;
-  /* margin: 0 auto calc(14 / 568 * 100vh); */
-  padding-left: calc(92 / 320 * 100vw);
+
   width: calc(280 / 320 * 100vw);
-  box-sizing: border-box;
   border-radius: 17px;
   background-color: #5d41b0;
 
@@ -84,12 +89,11 @@ h1 span {
 
   font-family: opensans_bold;
   text-transform: uppercase;
-  display: flex;
-  align-items: flex-end;
 }
 .top_button:nth-child(1) {
   padding-bottom: calc(8 / 568 * 100vh);
   padding-top: 3px;
+  margin-bottom: 14px;
 }
 .top_button:nth-child(2) {
   align-items: center;
@@ -111,6 +115,10 @@ h1 span {
 
 /* USERS*/
 
+.users {
+  padding-top: 15px;
+}
+
 article {
   padding: 60px 20px 50px;
 }
@@ -119,11 +127,11 @@ h2 {
   font-family: opensans_bold;
   text-transform: uppercase;
   color: #e7e7e7;
-  margin-top: 15px;
-  margin-left: 20px;
+  margin-top: 0;
+  padding: 0 20px;
 }
 .users img {
-  margin: 19px auto 0;
+  margin: 0 auto;
   display: block;
 }
 .users:nth-child(1) img {
@@ -134,29 +142,31 @@ h2 {
   width: 302px;
   height: 248px;
 }
-.users_pain:nth-child(3) {
-  padding-top: 80px;
-  background: #f9f9f9;
+.users:nth-child(1) .users_pain_articles {
   margin-top: -55px;
 }
 /* basketballer_302 */
-.users:nth-child(2) .users_pain:nth-child(3) {
+.users:nth-child(2) .users_pain_articles {
   margin-top: -25px;
 }
-.users_pain:nth-child(4) {
+.users_pain:nth-of-type(2) {
+  padding-top: 80px;
+  background: #f9f9f9;
+}
+.users_pain:nth-child(3) {
   background: #f5f3f9;
 }
-.users_pain:nth-child(5) {
+.users_pain:nth-child(4) {
   background: #5d41b0;
   color: #ffffff;
 }
-.users_pain:nth-child(3) h3::before {
+.users_pain:nth-child(2) h3::before {
   content: "01";
 }
-.users_pain:nth-child(4) h3::before {
+.users_pain:nth-child(3) h3::before {
   content: "02";
 }
-.users_pain:nth-child(5) h3::before {
+.users_pain:nth-child(4) h3::before {
   content: "03";
   border-bottom: 4px #ffffff solid;
 }
