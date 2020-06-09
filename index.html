@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Surface</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/768.css" media="(min-width: 641px)" />
-    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 961px)">
+    <link rel="stylesheet" href="css/768.css"  />
+    <!-- media="(min-width: 641px)" -->
+    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
+    <!-- media="(min-width: 961px)" -->
   </head>
   <body>
     <header class="top">
@@ -54,29 +56,34 @@
     </header>
     <main>
       <section class="users">
-        <img src="img/footballer_192.png" alt="american footbal">
-        <div class="users_pain_articles">
-          <h2>Athlets</h2>  
-          <article class="users_pain">
-            <h3>Connection with others</h3>
-            <p>Connect with coaches directly, you can ping coaches to view profile.</p>
-          </article>
-          <article class="users_pain">
-            <h3>Collaboration</h3>
-            <p>Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
-          </article>
-          <article class="users_pain">
-            <h3>Growth</h3>
-            <p>Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</p>
-          </article>
-        </div>
+        <h2>Athlets</h2>
+        <picture>
+          <source srcset="img/footballer_497.png" media="(min-width: 641px)">
+          <img src="img/footballer_192.png" alt="american footbal">
+        </picture>
+        <article class="users_pain">
+          <h3>Connection </h3>
+          <p>Connect with coaches directly, you can ping coaches to view profile.</p>
+        </article>
+        <article class="users_pain">
+          <h3>Collaboration</h3>
+          <p>Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
+        </article>
+        <article class="users_pain">
+          <h3>Growth</h3>
+          <p>Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</p>
+        </article>
+
       </section>
+
       <section class="users">
         <h2>Players</h2>
-        <img src="img/basketballer_302.png" alt="nba">
-        <div class="users_pain_articles">
+        <picture>
+          <source srcset="img/basketballer_436.png" media="(min-width: 641px)">
+          <img src="img/basketballer_302.png" alt="nba">
+        </picture>
           <article class="users_pain">
-            <h3>Connection</h3>
+            <h3>Connection<br></h3>
             <p>Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
           </article>
           <article class="users_pain">
@@ -87,25 +94,39 @@
             <h3>Growth</h3>
             <p>Save your time, recruit proper athlets for your team. </p>
           </article>
-        </div>
+
       </section>
+
       <section class="features">
         <div class="img_and_square">
-          <img src="img/be-active_640.jpg" alt="post videos">
+          <picture>
+            <source srcset="img/be-active_960.jpg" media="(min-width:641px)">
+            <img src="img/be-active_640.jpg" alt="post videos">
+          </picture>
         </div>
+
         <h2>Be active</h2>
         <p>Post videos with your skills, Like and follow others to be more popular.</p>
       </section>
+
       <section class="features">
         <div class="img_and_square">
-          <img src="img/find-contact_640.jpg" alt="coach">
+          <picture>
+            <source srcset="img/find-contact.jpg" media="(min-width: 641px)">
+            <img src="img/find-contact_640.jpg" alt="Coach">
+          </picture>
         </div>
         <h2>Find contact</h2>
         <p>Contact others to find right coach or athlete you are looking for. </p>
       </section>
+
       <section class="features">
         <div class="img_and_square">
-          <img src="img/work-it_640.jpg" alt="Команда спортсменов">
+          <picture>
+            <source srcset="img/work-it.jpg" media="(min-width: 641px)">
+              <img src="img/work-it_640.jpg" alt="Команда спортсменов">
+          </picture>
+
         </div>
         <h2>Work it</h2>
         <p>Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
@@ -113,14 +134,14 @@
     </main>
     <footer class="footer">
       <article class="footer_content">
-        <a class="footer_logo_button" href="#">
+        <div class="footer_logo_button" href="#">
           <svg viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
             <g fill-rule="evenodd">
               <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
               <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
             </g>
           </svg>
-        </a>
+        </div>
         <h3 class="footer_title">Download app</h3>
         <p>Show everyone what you can do!</p>
         <a class="footer_app_button" href="#">

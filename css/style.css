@@ -134,39 +134,39 @@ h2 {
   margin: 0 auto;
   display: block;
 }
-.users:nth-child(1) img {
+.users:nth-child(1) picture {
   width: 192px;
   height: 281px;
 }
-.users:nth-child(2) img {
+.users:nth-child(2) picture {
   width: 302px;
   height: 248px;
 }
-.users:nth-child(1) .users_pain_articles {
+.users:nth-child(1) .users_pain:nth-of-type(1) {
   margin-top: -55px;
 }
 /* basketballer_302 */
-.users:nth-child(2) .users_pain_articles {
+.users:nth-child(2) .users_pain:nth-of-type(1) {
   margin-top: -25px;
 }
-.users_pain:nth-of-type(2) {
+.users_pain:nth-of-type(1) {
   padding-top: 80px;
   background: #f9f9f9;
 }
-.users_pain:nth-child(3) {
+.users_pain:nth-of-type(2) {
   background: #f5f3f9;
 }
-.users_pain:nth-child(4) {
+.users_pain:nth-of-type(3) {
   background: #5d41b0;
   color: #ffffff;
 }
-.users_pain:nth-child(2) h3::before {
+.users_pain:nth-of-type(1) h3::before {
   content: "01";
 }
-.users_pain:nth-child(3) h3::before {
+.users_pain:nth-of-type(2) h3::before {
   content: "02";
 }
-.users_pain:nth-child(4) h3::before {
+.users_pain:nth-of-type(3) h3::before {
   content: "03";
   border-bottom: 4px #ffffff solid;
 }
@@ -216,11 +216,12 @@ p {
   display: block;
 }
 .features img {
-  margin: 0 auto;
+  display: block;
   width: 100%;
 }
 .features h2 {
   font-size: 28px;
+  line-height: 1;
   margin: 34px 0 0;
   padding: 0 20px;
 }
@@ -231,7 +232,7 @@ p {
   border-bottom: 4px #8f7bc8 solid;
   position: absolute;
   /*                верх    1/2 кв  s1/2 номера  border */
-  margin-top: calc(-92px + 70px / 2 - 19px / 2 - 4px);
+  margin-top: calc(-110px + 35px + 14px / 2);
   margin-left: calc(35px - 15px / 2);
 }
 .features:nth-child(3) h2::before {
