@@ -278,6 +278,7 @@ p {
 .footer_logo {
   display: flex;
   margin: 99px auto 0;
+  width: 22.5vw;
 }
 .footer_logo_box {
   width: 22.5vw;

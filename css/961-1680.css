@@ -1,0 +1,26 @@
+@media (min-width: 961px) and (max-width: 1680px) {
+  .features_content {
+    padding: 13.5vw 126px 0;
+  }
+  .features_content h2 {
+    font-size: 3.16vw;
+  }
+  .features_content p {
+    padding: 0;
+  }
+  .features_content h2::before {
+    margin: 7px -140px;
+  }
+  .features:nth-of-type(4) h2::before {
+    margin: 7px calc(50% - 138px);
+  }
+}
+@media (min-width: 961px) and (max-width: 1360px) {
+  .img_and_square::after {
+    left: auto;
+    right: -60px;
+  }
+  .features:nth-of-type(4) .img_and_square::after {
+    left: calc(-117px / 2);
+  }
+}
