@@ -66,20 +66,14 @@ h1 span {
 .icon_and_link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: 190px;
 }
-
-/* margin: 0 auto calc(14 / 568 * 100vh); */
-/* padding-left: calc(92 / 320 * 100vw); */
-/* box-sizing: border-box; */
-/* display: flex;
-align-items: flex-end; */
 
 .top_button,
 .footer_app_button {
   text-decoration: none;
-
+  display: flex;
+  justify-content: center;
   width: calc(280 / 320 * 100vw);
   border-radius: 17px;
   background-color: #5d41b0;
@@ -110,6 +104,7 @@ align-items: flex-end; */
   line-height: calc(13 / 568 * 100vh);
 }
 .app {
+  color: #ffffff;
   padding-left: 8px;
 }
 
@@ -119,10 +114,7 @@ align-items: flex-end; */
   padding-top: 15px;
 }
 
-article {
-  padding: 60px 20px 50px;
-}
-h2 {
+.users h2 {
   font-size: 50px;
   font-family: opensans_bold;
   text-transform: uppercase;
@@ -148,6 +140,9 @@ h2 {
 /* basketballer_302 */
 .users:nth-child(2) .users_pain:nth-of-type(1) {
   margin-top: -25px;
+}
+.users article {
+  padding: 60px 20px 50px;
 }
 .users_pain:nth-of-type(1) {
   padding-top: 80px;
@@ -217,13 +212,18 @@ p {
 }
 .features img {
   display: block;
-  width: 100%;
+  width: 100vw;
+  height: auto;
+  min-height: 351px;
 }
 .features h2 {
   font-size: 28px;
   line-height: 1;
   margin: 34px 0 0;
   padding: 0 20px;
+  font-family: opensans_bold;
+  text-transform: uppercase;
+  color: #e7e7e7;
 }
 .features h2::before {
   font-family: opensans_bold;
@@ -275,43 +275,45 @@ p {
 .footer * {
   position: relative;
 }
-.footer_logo_button {
-  width: 72px;
-  height: 72px;
+.footer_logo {
+  display: flex;
+  margin: 99px auto 0;
+}
+.footer_logo_box {
+  width: 22.5vw;
+  height: 22.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   background-color: #543aa0;
-  background-position: center;
   border: 0;
-  border-radius: 13px;
+  border-radius: 4.062vw;
 }
-.footer_logo_button svg {
-  height: 50px;
+.footer_logo_box svg {
+  height: 15.625vw;
   fill: #ffffff;
 }
 .footer_content {
-  padding: 100px 6.25vw 0;
+  padding: 11.267vh 6.25vw 0;
   color: #ffffff;
 }
-.footer_title {
+.footer h2 {
   font-family: opensans_bold;
   font-size: 10.076vw;
   line-height: 1;
   letter-spacing: 0.312vw;
   text-transform: uppercase;
-  margin: 58px auto 0;
+  margin: 0 auto;
   color: #ffffff;
 }
-.footer_content p {
+.footer p {
   font-family: opensans;
   font-size: 4.375vw;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
   color: #9b8ec1;
-  margin-top: 5px;
+  padding-top: 5px;
 }
 .footer_app_button {
   color: #ffffff;
@@ -334,7 +336,6 @@ p {
 }
 .footer_logo_text {
   padding-bottom: 10px;
-  flex-grow: 2;
   display: flex;
   align-items: flex-end;
   justify-content: center;

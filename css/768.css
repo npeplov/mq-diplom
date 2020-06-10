@@ -51,13 +51,13 @@
     padding-left: 292px;
   }
   .users:nth-child(2) h2 {
-    padding: 0 30px;
+    padding: 0 32px;
   }
   .users:nth-child(1) .users_pain {
-    padding: 35px 30px 35px 292px;
+    padding: 35px 32px 35px 292px;
   }
   .users:nth-child(2) .users_pain {
-    padding: 35px 305px 35px 30px;
+    padding: 35px 305px 35px 32px;
   }
   .users:nth-child(1) picture {
     width: 497px;
@@ -108,30 +108,58 @@
     letter-spacing: 0.1vw;
     line-height: 28px;
   }
+
+  /* FEAUTURES */
+
   .features img {
-    width: 768px;
-    height: 584px;
+    width: 100vw;
+    min-height: 584px;
   }
   .img_and_square::after {
     width: 116px;
     height: 116px;
     bottom: -36px;
-    left: 33px;
+    left: 32px;
   }
   .features h2 {
     font-size: 80px;
-    margin: 90px 0 0;
-    padding: 0 33px;
+    margin: 78px 0 0;
+    padding: 0 32px;
   }
   .features h2::before {
     font-size: 24px;
-    margin-top: calc(-194px + 116px / 2 + 24px / 2);
+    margin-top: calc(-178px + 116px / 2);
     margin-left: calc(116px / 2 - 27px / 2);
-    padding-bottom: 4px;
+    padding-bottom: 6px;
+    border-bottom: 5px #8f7bc8 solid;
+    width: 27px;
   }
   .features p {
     font-size: 24px;
     line-height: 28px;
-    padding: 0 33px 95px;
+    padding: 0 32px 101px;
+  }
+
+/* FOOTER */
+  .footer_logo {
+    margin: 125px auto 0;
+  }
+  .footer_logo_box {
+    border-radius: 35px;
+    width: 137px;
+    height: 137px;
+  }
+  .footer_logo_box svg {
+    height: 86px;
+  }
+  .footer_content {
+    padding: 8.267vh 6.25vw 0;
+    flex-grow: 2;
+  }
+  .footer_logo_text {
+    padding-bottom: 23px;
+  }
+  .footer_logo_text svg {
+    height: 56px;
   }
 }
