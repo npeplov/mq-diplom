@@ -66,7 +66,7 @@ h1 span {
 .icon_and_link {
   display: flex;
   align-items: center;
-  width: 190px;
+  width: 19.718vh;
 }
 
 .top_button,
@@ -244,9 +244,9 @@ p {
 .features:nth-child(5) h2::before {
   content: "03";
 }
-.features article {
+/* .features article {
   padding: 0;
-}
+} */
 .features p {
   font-size: 16px;
   margin-top: 20px;

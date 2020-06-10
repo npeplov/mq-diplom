@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/768.css"  />
     <!-- media="(min-width: 641px)" -->
-    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
+    <link rel="stylesheet" href="css/961.css">
     <!-- media="(min-width: 961px)" -->
   </head>
   <body>
@@ -56,9 +56,15 @@
       <section class="users">
         <h2>Athlets</h2>
         <picture>
-          <source srcset="img/footballer_497.png" media="(min-width: 641px)">
-          <img src="img/footballer_192.png" alt="american footbal">
-        </picture>
+          <source
+            media="(min-width: 640px) and (max-width: 960px)"
+            srcset="img/footballer_497.png">
+          <source
+            media="(min-width: 961px)"
+            srcset="img/footballer_566.png">
+    			<img class="course__img" src="img/footballer_192.png" alt="Логотип для курса Frontend-разработчик">
+    		</picture>
+
         <article class="users_pain">
           <h3>Connection </h3>
           <p>Connect with coaches directly, you can ping coaches to view profile.</p>
@@ -77,7 +83,8 @@
       <section class="users">
         <h2>Players</h2>
         <picture>
-          <source srcset="img/basketballer_436.png" media="(min-width: 641px)">
+          <source srcset="img/basketballer_436.png" media="(min-width: 641px) and (max-width: 960px)">
+          <source srcset="img/basketballer_991.png" media="(min-width: 961px)">
           <img src="img/basketballer_302.png" alt="nba">
         </picture>
           <article class="users_pain">
@@ -98,24 +105,33 @@
       <section class="features">
         <div class="img_and_square">
           <picture>
-            <source srcset="img/be-active_960.jpg" media="(min-width:641px)">
+            <source srcset="img/be-active_640.jpg" media="(min-width: 641px) and (max-width: 960px)">
+            <source srcset="img/be-active_960.jpg" media="(min-width: 961px)">
             <img src="img/be-active_640.jpg" alt="post videos">
           </picture>
         </div>
 
-        <h2>Be active</h2>
-        <p>Post videos with your skills, Like and follow others to be more popular.</p>
+        <article class="features_content">
+          <h2>Be active</h2>
+          <p>Post videos with your skills, Like and follow others to be more popular.</p>
+        </article>
+
       </section>
 
       <section class="features">
         <div class="img_and_square">
           <picture>
-            <source srcset="img/find-contact.jpg" media="(min-width: 641px)">
+            <source srcset="img/find-contact.jpg" media="(min-width: 641px) and (max-width: 960px)">
+            <source srcset="img/find-contact_960.jpg" media="(min-width: 961px)">
             <img src="img/find-contact_640.jpg" alt="Coach">
           </picture>
         </div>
-        <h2>Find contact</h2>
-        <p>Contact others to find right coach or athlete you are looking for. </p>
+
+        <article class="features_content">
+          <h2>Find contact</h2>
+          <p>Contact others to find right coach or athlete you are looking for. </p>
+        </article>
+
       </section>
 
       <section class="features">
@@ -124,30 +140,36 @@
             <source srcset="img/work-it.jpg" media="(min-width: 641px)">
               <img src="img/work-it_640.jpg" alt="Команда спортсменов">
           </picture>
-
         </div>
-        <h2>Work it</h2>
-        <p>Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
+
+        <article class="features_content">
+          <h2>Work it</h2>
+          <p>Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
+        </article>
       </section>
     </main>
 
     <footer class="footer">
 
-      <div class="footer_logo">
-        <div class="footer_logo_box" href="#">
-          <svg viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
-            <g fill-rule="evenodd">
-              <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
-              <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-          </svg>
+      <div class="footer_logo_and_content">
+        <div class="footer_logo">
+          <div class="footer_logo_box" href="#">
+            <svg viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="evenodd">
+                <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
+                <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </div>
         </div>
+
+        <article class="footer_content">
+          <h2>Download app</h2>
+          <p>Show everyone what you can do!</p>
+        </article>
       </div>
 
-      <article class="footer_content">
-        <h2>Download app</h2>
-        <p>Show everyone what you can do!</p>
-      </article>
+
 
 
       <div class="top_buttons">
