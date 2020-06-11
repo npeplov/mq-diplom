@@ -7,19 +7,15 @@
     font-size: 4.687vw;
     width: 81.354vw;
     padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   h1 span {
     padding-left: 23vw;
   }
   .top_buttons {
     width: 814px;
-    justify-content: space-evenly;
-    padding: 0;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
   }
   .top_button {
     width: 311px;
@@ -96,7 +92,7 @@
   .features {
     display: flex;
   }
-  .features:nth-of-type(4) .img_and_square {
+  .features:nth-of-type(2) .img_and_square {
     order: 2;
   }
   .img_and_square {
@@ -115,7 +111,7 @@
     top: 10.937vw;
     left: calc(100% - 8.75vw / 2);
   }
-  .features:nth-of-type(4) .img_and_square::after {
+  .features:nth-of-type(2) .img_and_square::after {
     top: 10.937vw;
     left: calc(-8.75vw / 2);
   }
@@ -134,13 +130,13 @@
     width: 27px;
     margin: 32px -140px;
   }
-  .features:nth-of-type(4) h2::before {
+  .features:nth-of-type(2) h2::before {
     margin: 32px calc(50% - 138px);
   }
   .features_content p {
     padding: 0;
     padding-top: 6.041vw;
-    width: 30.031vw;
+    /* width: 30.031vw; */
   }
 
   /* FOOTER */
@@ -149,6 +145,8 @@
     display: flex;
     margin: 250px auto 0;
     align-items: center;
+    max-width: 1530px;
+    padding: 0 4%;
   }
   .footer_logo {
     margin: 0;
@@ -172,7 +170,7 @@
   }
   .footer_logo_text {
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 50px 0;
     flex-grow: 1;
   }
 }

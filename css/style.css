@@ -22,8 +22,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 .top::before {
   content: "";
@@ -37,17 +35,21 @@ header {
   color: #ffffff;
 }
 .top_logo {
-  margin: calc(33 / 568 * 100vh) auto 0; /* 568px = 100%, 33px = x*/
+  padding-top: 5.809vh;/* 33px for 568 */
+  margin: 0 auto;
   width: 133px;
-  height: 36px;
   fill: #ffffff;
-  flex-grow: 2;
 }
 h1 {
+  margin-top: 23.767vh; /* 135px for 568 */
   padding: 0 calc(20 / 320 * 100vw);
+
   font-family: opensans_bold;
   font-size: calc(28 / 320 * 100vw);
   text-transform: uppercase;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 h1 span {
   display: block;
@@ -56,17 +58,18 @@ h1 span {
 }
 
 .top_buttons {
-  flex-grow: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 13.204vh; /* 75px for 568 */
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .icon_and_link {
   display: flex;
   align-items: center;
-  width: 19.718vh;
+  width: 19.718vh /* 34vw; */
+  min-width: 34vw;
 }
 
 .top_button,
@@ -78,8 +81,8 @@ h1 span {
   border-radius: 17px;
   background-color: #5d41b0;
 
-  font-size: calc(8 / 568 * 100vh);
-  line-height: calc(7 / 568 * 100vh);
+  font-size: 2.5vw; /* 8px for 320 */
+  line-height: 1;
 
   font-family: opensans_bold;
   text-transform: uppercase;
@@ -101,7 +104,7 @@ h1 span {
 }
 .top_button span {
   font-family: opensans;
-  line-height: calc(13 / 568 * 100vh);
+  line-height: 13px;
 }
 .app {
   color: #ffffff;
@@ -316,30 +319,13 @@ p {
   color: #9b8ec1;
   padding-top: 5px;
 }
-.footer_app_button {
-  color: #ffffff;
-}
-.footer_app_button svg {
-  fill: #ffffff;
-  width: calc(24 / 568 * 100vh);
-}
-.footer_app_button:nth-child(4) {
-  margin-top: calc(75 / 568 * 100vh);
-  padding-bottom: calc(8 / 568 * 100vh);
-}
-.footer_app_button:nth-child(5) {
-  align-items: center;
-  line-height: calc(13 / 568 * 100vh);
-}
-.footer_app_button span {
-  font-family: opensans;
-  line-height: calc(13 / 568 * 100vh);
-}
+
 .footer_logo_text {
-  padding-bottom: 10px;
+  padding: 10px 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-grow: 2;
 }
 .footer_logo_text svg {
   height: 36px;

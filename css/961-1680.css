@@ -1,17 +1,19 @@
 @media (min-width: 961px) and (max-width: 1680px) {
   .features_content {
-    padding: 13.5vw 126px 0;
+    padding: 13.5vw 8vw 30px 126px;
   }
   .features_content h2 {
     font-size: 3.16vw;
   }
   .features_content p {
     padding: 0;
+    font-size: 1.6vw;
+    line-height: 1.2;
   }
   .features_content h2::before {
     margin: 7px -140px;
   }
-  .features:nth-of-type(4) h2::before {
+  .features:nth-of-type(2) h2::before {
     margin: 7px calc(50% - 138px);
   }
 }
@@ -20,7 +22,7 @@
     left: auto;
     right: -60px;
   }
-  .features:nth-of-type(4) .img_and_square::after {
+  .features:nth-of-type(2) .img_and_square::after {
     left: calc(-117px / 2);
   }
 }
