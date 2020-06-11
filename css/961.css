@@ -145,15 +145,10 @@
 
   /* FOOTER */
 
-  .footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   .footer_logo_and_content {
     display: flex;
-    margin: 0 auto;
-    align-items: flex-end;
-    height: 366px;
+    margin: 250px auto 0;
+    align-items: center;
   }
   .footer_logo {
     margin: 0;
@@ -170,10 +165,7 @@
     text-align: left;
   }
   .footer .top_buttons {
-    align-self: flex-start;
-    width: 100%;
     justify-content: center;
-    margin-top: -50px;
   }
   .footer .top_button:nth-child(1) {
     margin-right: 50px;
@@ -181,5 +173,6 @@
   .footer_logo_text {
     margin: 0 auto;
     padding-bottom: 50px;
+    flex-grow: 1;
   }
 }
