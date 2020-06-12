@@ -35,7 +35,7 @@ header {
   color: #ffffff;
 }
 .top_logo {
-  padding-top: 5.809vh;/* 33px for 568 */
+  padding-top: 5.809vh; /* 33px for 568 */
   margin: 0 auto;
   width: 133px;
   fill: #ffffff;
@@ -68,9 +68,6 @@ h1 span {
 .icon_and_link {
   display: flex;
   align-items: center;
-  /* width: 19.718vh; /* 34vw; */
-  /* max-width: 220px; */
-  /* min-width: 34vw; */
   width: 35vw;
 }
 
@@ -89,20 +86,11 @@ h1 span {
   font-family: opensans_bold;
   text-transform: uppercase;
 }
-/* .top_button:nth-child(1) {
-  padding-bottom: calc(8 / 568 * 100vh);
-  padding-top: 12px;
-  margin-bottom: 14px;
-} */
+
 .top_button:nth-child(1) {
   margin-bottom: 14px;
 }
-/* .top_button:nth-child(2) {
-  align-items: center;
-  line-height: calc(13 / 568 * 100vh);
-  padding-bottom: 5px;
-  padding-top: 6px;
-} */
+
 .top_button {
   align-items: center;
   line-height: calc(13 / 568 * 100vh);
@@ -111,7 +99,6 @@ h1 span {
 }
 .top_button svg {
   fill: #ffffff;
-  /* width: calc(24 / 568 * 100vh); */
   width: 24px;
 }
 .top_button span {
@@ -234,7 +221,7 @@ p {
 .features h2 {
   font-size: 28px;
   line-height: 1;
-  margin: 34px 0 0;
+  margin: 34px 0 20px;
   padding: 0 20px;
   font-family: opensans_bold;
   text-transform: uppercase;
@@ -262,8 +249,10 @@ p {
 
 .features p {
   font-size: 16px;
-  /* margin-top: 20px; */
-  padding: 0 20px 78px;
+  padding: 0 20px 20px;
+}
+.features p:last-child {
+  padding-bottom: 78px;
 }
 
 /* FOOTER */

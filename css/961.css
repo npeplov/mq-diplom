@@ -100,16 +100,13 @@
     height: auto;
   }
   .img_and_square img {
-    width: 100%;
-    min-height: auto;
+    width: 50vw;
   }
   .img_and_square::after {
     width: 8.75vw;
     height: 8.072vw;
     min-width: 116px;
     min-height: 116px;
-    /* max-width: 168px;
-    max-height: 155px; */
     top: 10.937vw;
     left: calc(100% - 8.75vw / 2);
   }
@@ -141,8 +138,9 @@
   }
   .features_content p {
     padding: 0;
-    /* padding-top: 6.041vw; */
-    /* width: 30.031vw; */
+  }
+  .features p:last-child {
+    padding-bottom: 1.19vw;
   }
 
   /* FOOTER */

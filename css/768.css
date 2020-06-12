@@ -28,16 +28,8 @@
     font-size: 14px;
   }
   .top_button:nth-child(1) {
-    /* padding-top: 16px;
-    padding-bottom: 19px; */
     margin-bottom: 0;
   }
-  /* .top_button:nth-child(2) {
-    align-items: center;
-    line-height: 1.3;
-    padding-top: 17px;
-    padding-bottom: 15px;
-  } */
   .top_button {
     align-items: center;
     line-height: 1.3;
@@ -121,8 +113,7 @@
   /* FEAUTURES */
 
   .features img {
-    width: 100vw;
-    min-height: 584px;
+
   }
   .img_and_square::after {
     width: 116px;
@@ -152,8 +143,8 @@
     margin-bottom: 1.904vw;
   }
   .features p:last-child {
-    /* padding-bottom: 20px; */
-    padding-bottom: 1.19vw;
+    /* padding-bottom: 1.19vw; */
+    padding-bottom: 85px;
   }
 
 /* FOOTER */
