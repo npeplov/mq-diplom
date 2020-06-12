@@ -68,8 +68,10 @@ h1 span {
 .icon_and_link {
   display: flex;
   align-items: center;
-  width: 19.718vh /* 34vw; */
-  min-width: 34vw;
+  /* width: 19.718vh; /* 34vw; */
+  /* max-width: 220px; */
+  /* min-width: 34vw; */
+  width: 35vw;
 }
 
 .top_button,
@@ -87,12 +89,21 @@ h1 span {
   font-family: opensans_bold;
   text-transform: uppercase;
 }
-.top_button:nth-child(1) {
+/* .top_button:nth-child(1) {
   padding-bottom: calc(8 / 568 * 100vh);
-  padding-top: 3px;
+  padding-top: 12px;
+  margin-bottom: 14px;
+} */
+.top_button:nth-child(1) {
   margin-bottom: 14px;
 }
-.top_button:nth-child(2) {
+/* .top_button:nth-child(2) {
+  align-items: center;
+  line-height: calc(13 / 568 * 100vh);
+  padding-bottom: 5px;
+  padding-top: 6px;
+} */
+.top_button {
   align-items: center;
   line-height: calc(13 / 568 * 100vh);
   padding-bottom: 5px;
@@ -100,7 +111,8 @@ h1 span {
 }
 .top_button svg {
   fill: #ffffff;
-  width: calc(24 / 568 * 100vh);
+  /* width: calc(24 / 568 * 100vh); */
+  width: 24px;
 }
 .top_button span {
   font-family: opensans;
@@ -247,12 +259,10 @@ p {
 .features:nth-child(5) h2::before {
   content: "03";
 }
-/* .features article {
-  padding: 0;
-} */
+
 .features p {
   font-size: 16px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 0 20px 78px;
 }
 

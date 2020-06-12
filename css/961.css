@@ -108,6 +108,8 @@
     height: 8.072vw;
     min-width: 116px;
     min-height: 116px;
+    /* max-width: 168px;
+    max-height: 155px; */
     top: 10.937vw;
     left: calc(100% - 8.75vw / 2);
   }
@@ -117,25 +119,29 @@
   }
   .features_content {
     width: 50%;
-    padding: 12.5vw 126px 0;
+    /* padding: 12.5vw 126px 0; */
+    padding: 12.5vw 6.562vw 0;
     box-sizing: border-box;
   }
   .features_content h2 {
     margin: 0;
     padding: 0;
+    margin-bottom: 6.041vw;
     /* font-size: 4.166vw; */
   }
   .features_content h2::before {
     border-bottom: 5px #8f7bc8 solid;
     width: 27px;
-    margin: 32px -140px;
+    /* margin: 32px -140px; */
+    margin: 32px -7.291vw;
   }
   .features:nth-of-type(2) h2::before {
-    margin: 32px calc(50% - 138px);
+    /* margin: 32px calc(50% - 138px); */
+    margin: 32px calc(50% - 7.291vw);
   }
   .features_content p {
     padding: 0;
-    padding-top: 6.041vw;
+    /* padding-top: 6.041vw; */
     /* width: 30.031vw; */
   }
 
