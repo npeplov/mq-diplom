@@ -100,7 +100,7 @@
     height: auto;
   }
   .img_and_square img {
-    width: 50vw;
+    width: 100%;
   }
   .img_and_square::after {
     width: 8.75vw;
